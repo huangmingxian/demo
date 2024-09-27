@@ -12,10 +12,10 @@ client = OpenAI(
 response = client.chat.completions.create(
     model="glm-4-flash",
     messages=[
-        {"role": "system", "content": "以一致的风格回答"},
-        {"role": "user", "content": "教我耐心。"},
+        {"role": "system", "content": "以一致的风格解释概念"},
+        {"role": "user", "content": "耐心。"},
         {"role": "assistant", "content": "河流冲刷出最深的山谷，发源于温和的泉水；最伟大的交响乐源自一个音符；最复杂的挂毯都是从一根单独的线开始的。"},
-        {"role": "user", "content": "教我有关海洋的知识。"}
+        {"role": "user", "content": "热爱。"}
     ],
     stream=False
 )
