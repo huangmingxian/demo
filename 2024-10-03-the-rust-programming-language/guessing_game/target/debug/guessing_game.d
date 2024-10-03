@@ -1,0 +1,1 @@
+/Users/zen/hmx/demo.huangmingxian.com/2024-10-03-the-rust-programming-language/guessing_game/target/debug/guessing_game: /Users/zen/hmx/demo.huangmingxian.com/2024-10-03-the-rust-programming-language/guessing_game/src/main.rs

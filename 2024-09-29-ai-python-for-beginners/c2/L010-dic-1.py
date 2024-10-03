@@ -5,7 +5,7 @@ ice_cream_flavors = [
 ]
 
 
-promotional_descriptions = {}
+promotional_descriptions = []
 for flavor in ice_cream_flavors:
     prompt = f"""对于冰淇淋口味列表中的每一种口味，
     提供一个吸引人的描述，可用于促销目的
@@ -13,7 +13,6 @@ for flavor in ice_cream_flavors:
     口味: {flavor}
     """
     description = get_llm_response(prompt)
-    promotional_descriptions[flavor] = description
+    promotional_descriptions.append(description)
     
 print(promotional_descriptions)
-print(promotional_descriptions["香草"])

@@ -97,3 +97,15 @@ def read_journal(journal_file):
     journal = f.read()
     f.close()
     return journal
+
+
+def read_csv(file):
+    f = open(file, "r")
+    
+    csv_reader = csv.DictReader(f)
+    data = []
+    for row in csv_reader:
+        data.append(row)
+    f.close()
+    
+    return data
