@@ -1,9 +1,5 @@
 from helper_functions import *
 
-f = open("docs/cape_town.txt", "r")
-journal_cape_town = f.read()
-f.close()
-
 
 f = open("docs/tokyo.txt", "r")
 journal_tokyo = f.read() 

@@ -6,6 +6,7 @@ f = open("docs/itinerary.csv", 'r')
 
 # 2. 使用 csv.DictReader 读取 CSV 文件,将CSV文件的每一行读取为一个字典，其中列名作为字典的键，保存为一个列表
 csv_reader = csv.DictReader(f)
+
 itinerary = []
 for row in csv_reader:
     itinerary.append(row)
